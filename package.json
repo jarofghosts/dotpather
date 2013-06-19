@@ -1,0 +1,22 @@
+{
+  "name": "dotpather",
+  "version": "0.0.1",
+  "description": "dotpath traversal for templating",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibanishapurr/project2.git"
+  },
+  "keywords": [
+    "dotpath",
+    "utility"
+  ],
+  "author": "jesse keane",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/ibanishapurr/project2/issues"
+  }
+}
