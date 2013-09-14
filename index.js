@@ -1,20 +1,19 @@
 function dotPath(str) {
-  var parts = str.toString().split('.');
+  var parts = str.toString().split('.'),
+      l = parts.length;
   
-  return function parse(obj, arr) {
+  return function parse(obj) {
 
-    arr = arr !== undefined ? arr : parts.slice();
+    if (obj == undefined) return undefined;
     
-    if (!obj) { return undefined; }
-    
-    var check = arr[0];
-    if (obj[check]) {
-      return arr.length > 1 ? parse(obj[check], arr.slice(1)) : obj[check];
+    var i = 0;
+    for (; i < l; ++i) {
+      var testKey = parts[i];
+      if (obj[testKey] == undefined) return undefined;
+      obj = obj[testKey];
     }
 
-    return undefined;
-   
-
+    return obj;
   }
 
 }
