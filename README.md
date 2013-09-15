@@ -1,6 +1,8 @@
 dotpather
 ===
 
+[![Build Status](https://travis-ci.org/jarofghosts/dotpather.png?branch=master)](https://travis-ci.org/jarofghosts/dotpather)
+
 Utility for traversing objects based on dot paths
 
 ## usage
