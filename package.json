@@ -1,6 +1,6 @@
 {
   "name": "dotpather",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "dotpath traversal for templating",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ibanishapurr/project2.git"
+    "url": "https://github.com/jarofghosts/dotpather.git"
   },
   "keywords": [
     "dotpath",
@@ -17,6 +17,6 @@
   "author": "jesse keane",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ibanishapurr/project2/issues"
+    "url": "https://github.com/jarofghosts/dotpather/issues"
   }
 }
