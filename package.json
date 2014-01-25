@@ -1,7 +1,7 @@
 {
   "name": "dotpather",
   "version": "0.0.2",
-  "description": "dotpath traversal for templating",
+  "description": "dotpath lookup module",
   "main": "index.js",
   "scripts": {
     "test": "node test/test.js"
