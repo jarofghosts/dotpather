@@ -12,7 +12,7 @@ function dotpath(str) {
     for (var i = 0; i < len; ++i) {
       test_key = parts[i]
 
-      if (!obj || obj[test_key] === undefined) return undefined
+      if (!obj) return undefined
       obj = obj[test_key]
     }
 
