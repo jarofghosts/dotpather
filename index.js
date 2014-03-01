@@ -6,8 +6,6 @@ function dotpath(str) {
   
   return function parse(obj) {
     var test_key
-
-    if (obj === undefined) return undefined
     
     for (var i = 0; i < len; ++i) {
       test_key = parts[i]
