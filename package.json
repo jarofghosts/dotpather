@@ -1,6 +1,6 @@
 {
   "name": "dotpather",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "dotpath lookup module",
   "main": "index.js",
   "scripts": {
