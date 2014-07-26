@@ -5,14 +5,14 @@ function dotpath(str) {
     , len = parts.length
   
   return function parse(obj) {
-    var test_key
+    var testKey
     
     for(var i = 0; i < len; ++i) {
-      test_key = parts[i]
+      testKey = parts[i]
 
       if(!obj) return
 
-      obj = obj[test_key]
+      obj = obj[testKey]
     }
 
     return obj
