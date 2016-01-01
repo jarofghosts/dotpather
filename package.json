@@ -4,7 +4,8 @@
   "description": "dotpath lookup module",
   "main": "index.js",
   "scripts": {
-    "test": "node test/index.js"
+    "lint": "standard index.js test/index.js",
+    "test": "node test/index.js && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "url": "https://github.com/jarofghosts/dotpather/issues"
   },
   "devDependencies": {
-    "tape": "^2.13.4"
+    "standard": "^5.4.1",
+    "tape": "^4.4.0"
   }
 }

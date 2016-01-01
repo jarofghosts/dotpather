@@ -2,7 +2,7 @@ var test = require('tape')
 
 var dotpather = require('../index.js')
 
-test('returns value at property', function(t) {
+test('returns value at property', function (t) {
   t.plan(2)
 
   var lookup = dotpather('check')
@@ -11,7 +11,7 @@ test('returns value at property', function(t) {
   t.deepEqual(lookup({check: {derp: true}}), {derp: true})
 })
 
-test('finds nested values', function(t) {
+test('finds nested values', function (t) {
   t.plan(1)
 
   var lookup = dotpather('check.that.attribute')
@@ -19,7 +19,7 @@ test('finds nested values', function(t) {
   t.equal(lookup({check: {that: {attribute: 666}}}), 666)
 })
 
-test('returns undefined if path not found', function(t) {
+test('returns undefined if path not found', function (t) {
   t.plan(1)
 
   var lookup = dotpather('invalid.path')
@@ -27,7 +27,7 @@ test('returns undefined if path not found', function(t) {
   t.equal(lookup({valid: {path: true}}), void 0)
 })
 
-test('properly returns falsey values', function(t) {
+test('properly returns falsey values', function (t) {
   t.plan(2)
 
   var lookup = dotpather('falsey.value')
@@ -36,7 +36,7 @@ test('properly returns falsey values', function(t) {
   t.equal(lookup({falsey: {value: null}}), null)
 })
 
-test('works on arrays also', function(t) {
+test('works on arrays also', function (t) {
   t.plan(1)
 
   var lookup = dotpather('arr.1')
